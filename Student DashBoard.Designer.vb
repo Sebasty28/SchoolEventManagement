@@ -39,10 +39,9 @@ Partial Class Student_DashBoard
         Me.btn_Register.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Register.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Register.ForeColor = System.Drawing.Color.White
-        Me.btn_Register.Location = New System.Drawing.Point(448, 388)
-        Me.btn_Register.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_Register.Location = New System.Drawing.Point(330, 315)
         Me.btn_Register.Name = "btn_Register"
-        Me.btn_Register.Size = New System.Drawing.Size(150, 34)
+        Me.btn_Register.Size = New System.Drawing.Size(112, 28)
         Me.btn_Register.TabIndex = 6
         Me.btn_Register.Text = "Register"
         Me.btn_Register.UseVisualStyleBackColor = False
@@ -52,10 +51,9 @@ Partial Class Student_DashBoard
         Me.btn_FeedBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_FeedBack.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_FeedBack.ForeColor = System.Drawing.Color.White
-        Me.btn_FeedBack.Location = New System.Drawing.Point(606, 388)
-        Me.btn_FeedBack.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_FeedBack.Location = New System.Drawing.Point(450, 315)
         Me.btn_FeedBack.Name = "btn_FeedBack"
-        Me.btn_FeedBack.Size = New System.Drawing.Size(144, 34)
+        Me.btn_FeedBack.Size = New System.Drawing.Size(108, 28)
         Me.btn_FeedBack.TabIndex = 7
         Me.btn_FeedBack.Text = "Feedback"
         Me.btn_FeedBack.UseVisualStyleBackColor = False
@@ -63,11 +61,9 @@ Partial Class Student_DashBoard
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(43, 70)
-        Me.ListBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.ListBox1.Location = New System.Drawing.Point(32, 57)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(273, 292)
+        Me.ListBox1.Size = New System.Drawing.Size(206, 238)
         Me.ListBox1.TabIndex = 8
         '
         'btn_Exit
@@ -75,10 +71,9 @@ Partial Class Student_DashBoard
         Me.btn_Exit.BackColor = System.Drawing.Color.DarkGray
         Me.btn_Exit.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Exit.ForeColor = System.Drawing.Color.White
-        Me.btn_Exit.Location = New System.Drawing.Point(13, 418)
-        Me.btn_Exit.Margin = New System.Windows.Forms.Padding(4)
+        Me.btn_Exit.Location = New System.Drawing.Point(10, 340)
         Me.btn_Exit.Name = "btn_Exit"
-        Me.btn_Exit.Size = New System.Drawing.Size(124, 34)
+        Me.btn_Exit.Size = New System.Drawing.Size(93, 28)
         Me.btn_Exit.TabIndex = 9
         Me.btn_Exit.Text = "Exit"
         Me.btn_Exit.UseVisualStyleBackColor = False
@@ -86,69 +81,64 @@ Partial Class Student_DashBoard
         'lbl_GenderValue
         '
         Me.lbl_GenderValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_GenderValue.Location = New System.Drawing.Point(512, 337)
-        Me.lbl_GenderValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_GenderValue.Location = New System.Drawing.Point(374, 274)
         Me.lbl_GenderValue.Name = "lbl_GenderValue"
-        Me.lbl_GenderValue.Size = New System.Drawing.Size(86, 26)
+        Me.lbl_GenderValue.Size = New System.Drawing.Size(64, 21)
         Me.lbl_GenderValue.TabIndex = 15
         Me.lbl_GenderValue.Text = "Gender"
         '
         'lbl_AgeValue
         '
         Me.lbl_AgeValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_AgeValue.Location = New System.Drawing.Point(646, 337)
-        Me.lbl_AgeValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_AgeValue.Location = New System.Drawing.Point(473, 274)
         Me.lbl_AgeValue.Name = "lbl_AgeValue"
-        Me.lbl_AgeValue.Size = New System.Drawing.Size(86, 26)
+        Me.lbl_AgeValue.Size = New System.Drawing.Size(64, 21)
         Me.lbl_AgeValue.TabIndex = 14
         Me.lbl_AgeValue.Text = "Age"
         '
         'lbl_sutdCourseValue
         '
         Me.lbl_sutdCourseValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_sutdCourseValue.Location = New System.Drawing.Point(440, 305)
-        Me.lbl_sutdCourseValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_sutdCourseValue.Location = New System.Drawing.Point(330, 248)
         Me.lbl_sutdCourseValue.Name = "lbl_sutdCourseValue"
-        Me.lbl_sutdCourseValue.Size = New System.Drawing.Size(310, 23)
+        Me.lbl_sutdCourseValue.Size = New System.Drawing.Size(232, 19)
         Me.lbl_sutdCourseValue.TabIndex = 13
         Me.lbl_sutdCourseValue.Text = "BSIT 2-1"
         '
         'lbl_studOrgValue
         '
         Me.lbl_studOrgValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_studOrgValue.Location = New System.Drawing.Point(440, 254)
-        Me.lbl_studOrgValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_studOrgValue.Location = New System.Drawing.Point(330, 206)
         Me.lbl_studOrgValue.Name = "lbl_studOrgValue"
-        Me.lbl_studOrgValue.Size = New System.Drawing.Size(310, 23)
+        Me.lbl_studOrgValue.Size = New System.Drawing.Size(232, 19)
         Me.lbl_studOrgValue.TabIndex = 12
         Me.lbl_studOrgValue.Text = "Organization"
         '
         'lbl_studNameValue
         '
         Me.lbl_studNameValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_studNameValue.Location = New System.Drawing.Point(440, 199)
-        Me.lbl_studNameValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_studNameValue.Location = New System.Drawing.Point(330, 162)
         Me.lbl_studNameValue.Name = "lbl_studNameValue"
-        Me.lbl_studNameValue.Size = New System.Drawing.Size(310, 23)
+        Me.lbl_studNameValue.Size = New System.Drawing.Size(232, 19)
         Me.lbl_studNameValue.TabIndex = 11
         Me.lbl_studNameValue.Text = "Student Name"
         '
         'lbl_studIdValue
         '
         Me.lbl_studIdValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_studIdValue.Location = New System.Drawing.Point(440, 143)
-        Me.lbl_studIdValue.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lbl_studIdValue.Location = New System.Drawing.Point(330, 116)
         Me.lbl_studIdValue.Name = "lbl_studIdValue"
-        Me.lbl_studIdValue.Size = New System.Drawing.Size(310, 23)
+        Me.lbl_studIdValue.Size = New System.Drawing.Size(232, 19)
         Me.lbl_studIdValue.TabIndex = 10
         Me.lbl_studIdValue.Text = "Student ID"
         '
         'Student_DashBoard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SchoolEventManagement.My.Resources.Resources.LoginDashboard__3_
-        Me.ClientSize = New System.Drawing.Size(782, 465)
+        Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.ClientSize = New System.Drawing.Size(586, 378)
         Me.Controls.Add(Me.lbl_GenderValue)
         Me.Controls.Add(Me.lbl_AgeValue)
         Me.Controls.Add(Me.lbl_sutdCourseValue)
@@ -159,7 +149,6 @@ Partial Class Student_DashBoard
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.btn_FeedBack)
         Me.Controls.Add(Me.btn_Register)
-        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "Student_DashBoard"
         Me.Text = "Student_DashBoard"
         Me.ResumeLayout(False)

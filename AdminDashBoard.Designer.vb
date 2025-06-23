@@ -39,7 +39,7 @@ Partial Class Admin_DashBoard
         '
         Me.tb_name.BackColor = System.Drawing.Color.WhiteSmoke
         Me.tb_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tb_name.Location = New System.Drawing.Point(438, 141)
+        Me.tb_name.Location = New System.Drawing.Point(438, 150)
         Me.tb_name.Margin = New System.Windows.Forms.Padding(4)
         Me.tb_name.Multiline = True
         Me.tb_name.Name = "tb_name"
@@ -49,7 +49,7 @@ Partial Class Admin_DashBoard
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox1.Location = New System.Drawing.Point(438, 313)
+        Me.TextBox1.Location = New System.Drawing.Point(438, 332)
         Me.TextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -59,7 +59,7 @@ Partial Class Admin_DashBoard
         'txtb_dateEnd
         '
         Me.txtb_dateEnd.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_dateEnd.Location = New System.Drawing.Point(438, 257)
+        Me.txtb_dateEnd.Location = New System.Drawing.Point(438, 276)
         Me.txtb_dateEnd.Margin = New System.Windows.Forms.Padding(4)
         Me.txtb_dateEnd.Multiline = True
         Me.txtb_dateEnd.Name = "txtb_dateEnd"
@@ -69,7 +69,7 @@ Partial Class Admin_DashBoard
         'txtb_dateStart
         '
         Me.txtb_dateStart.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_dateStart.Location = New System.Drawing.Point(438, 367)
+        Me.txtb_dateStart.Location = New System.Drawing.Point(438, 390)
         Me.txtb_dateStart.Margin = New System.Windows.Forms.Padding(4)
         Me.txtb_dateStart.Multiline = True
         Me.txtb_dateStart.Name = "txtb_dateStart"
@@ -79,7 +79,7 @@ Partial Class Admin_DashBoard
         'txtb_Venue
         '
         Me.txtb_Venue.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_Venue.Location = New System.Drawing.Point(438, 200)
+        Me.txtb_Venue.Location = New System.Drawing.Point(438, 215)
         Me.txtb_Venue.Margin = New System.Windows.Forms.Padding(4)
         Me.txtb_Venue.Multiline = True
         Me.txtb_Venue.Name = "txtb_Venue"
@@ -102,7 +102,7 @@ Partial Class Admin_DashBoard
         Me.btn_Create.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Create.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Create.ForeColor = System.Drawing.Color.White
-        Me.btn_Create.Location = New System.Drawing.Point(422, 398)
+        Me.btn_Create.Location = New System.Drawing.Point(422, 433)
         Me.btn_Create.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Create.Name = "btn_Create"
         Me.btn_Create.Size = New System.Drawing.Size(165, 31)
@@ -115,7 +115,7 @@ Partial Class Admin_DashBoard
         Me.btn_Update.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Update.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Update.ForeColor = System.Drawing.Color.White
-        Me.btn_Update.Location = New System.Drawing.Point(604, 398)
+        Me.btn_Update.Location = New System.Drawing.Point(604, 433)
         Me.btn_Update.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Update.Name = "btn_Update"
         Me.btn_Update.Size = New System.Drawing.Size(165, 31)
@@ -128,7 +128,7 @@ Partial Class Admin_DashBoard
         Me.btn_Delete.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Delete.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Delete.ForeColor = System.Drawing.Color.White
-        Me.btn_Delete.Location = New System.Drawing.Point(422, 426)
+        Me.btn_Delete.Location = New System.Drawing.Point(422, 461)
         Me.btn_Delete.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Delete.Name = "btn_Delete"
         Me.btn_Delete.Size = New System.Drawing.Size(165, 31)
@@ -141,7 +141,7 @@ Partial Class Admin_DashBoard
         Me.btn_feedBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_feedBack.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_feedBack.ForeColor = System.Drawing.Color.White
-        Me.btn_feedBack.Location = New System.Drawing.Point(604, 426)
+        Me.btn_feedBack.Location = New System.Drawing.Point(604, 461)
         Me.btn_feedBack.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_feedBack.Name = "btn_feedBack"
         Me.btn_feedBack.Size = New System.Drawing.Size(165, 31)
@@ -154,7 +154,7 @@ Partial Class Admin_DashBoard
         Me.btn_Logut.BackColor = System.Drawing.Color.DarkGray
         Me.btn_Logut.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Logut.ForeColor = System.Drawing.Color.White
-        Me.btn_Logut.Location = New System.Drawing.Point(13, 426)
+        Me.btn_Logut.Location = New System.Drawing.Point(13, 458)
         Me.btn_Logut.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_Logut.Name = "btn_Logut"
         Me.btn_Logut.Size = New System.Drawing.Size(118, 37)
@@ -169,7 +169,7 @@ Partial Class Admin_DashBoard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.BackgroundImage = Global.SchoolEventManagement.My.Resources.Resources.LoginDashboard__4_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(797, 470)
+        Me.ClientSize = New System.Drawing.Size(797, 505)
         Me.Controls.Add(Me.btn_Logut)
         Me.Controls.Add(Me.btn_feedBack)
         Me.Controls.Add(Me.btn_Delete)
