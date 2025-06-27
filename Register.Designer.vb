@@ -24,12 +24,12 @@ Partial Class Register
     Private Sub InitializeComponent()
         Me.btn_reg = New System.Windows.Forms.Button()
         Me.btn_exit = New System.Windows.Forms.Button()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_course_section = New System.Windows.Forms.TextBox()
+        Me.txt_studID = New System.Windows.Forms.TextBox()
+        Me.txt_name = New System.Windows.Forms.TextBox()
+        Me.txt_org = New System.Windows.Forms.TextBox()
+        Me.cb_gender = New System.Windows.Forms.ComboBox()
+        Me.cb_age = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'btn_reg
@@ -56,53 +56,56 @@ Partial Class Register
         Me.btn_exit.Text = "Exit"
         Me.btn_exit.UseVisualStyleBackColor = False
         '
-        'TextBox4
+        'txt_course_section
         '
-        Me.TextBox4.Location = New System.Drawing.Point(325, 250)
-        Me.TextBox4.Multiline = True
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(234, 19)
-        Me.TextBox4.TabIndex = 22
+        Me.txt_course_section.Location = New System.Drawing.Point(325, 250)
+        Me.txt_course_section.Multiline = True
+        Me.txt_course_section.Name = "txt_course_section"
+        Me.txt_course_section.Size = New System.Drawing.Size(234, 19)
+        Me.txt_course_section.TabIndex = 22
         '
-        'TextBox5
+        'txt_studID
         '
-        Me.TextBox5.Location = New System.Drawing.Point(374, 275)
-        Me.TextBox5.Multiline = True
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(66, 22)
-        Me.TextBox5.TabIndex = 23
+        Me.txt_studID.Location = New System.Drawing.Point(325, 115)
+        Me.txt_studID.Multiline = True
+        Me.txt_studID.Name = "txt_studID"
+        Me.txt_studID.ReadOnly = True
+        Me.txt_studID.Size = New System.Drawing.Size(234, 19)
+        Me.txt_studID.TabIndex = 25
         '
-        'TextBox6
+        'txt_name
         '
-        Me.TextBox6.Location = New System.Drawing.Point(472, 275)
-        Me.TextBox6.Multiline = True
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(67, 22)
-        Me.TextBox6.TabIndex = 24
+        Me.txt_name.Location = New System.Drawing.Point(325, 162)
+        Me.txt_name.Multiline = True
+        Me.txt_name.Name = "txt_name"
+        Me.txt_name.Size = New System.Drawing.Size(234, 19)
+        Me.txt_name.TabIndex = 26
         '
-        'TextBox1
+        'txt_org
         '
-        Me.TextBox1.Location = New System.Drawing.Point(325, 115)
-        Me.TextBox1.Multiline = True
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(234, 19)
-        Me.TextBox1.TabIndex = 25
+        Me.txt_org.Location = New System.Drawing.Point(325, 209)
+        Me.txt_org.Multiline = True
+        Me.txt_org.Name = "txt_org"
+        Me.txt_org.Size = New System.Drawing.Size(234, 19)
+        Me.txt_org.TabIndex = 27
         '
-        'TextBox2
+        'cb_gender
         '
-        Me.TextBox2.Location = New System.Drawing.Point(325, 162)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(234, 19)
-        Me.TextBox2.TabIndex = 26
+        Me.cb_gender.FormattingEnabled = True
+        Me.cb_gender.Items.AddRange(New Object() {"F", "M"})
+        Me.cb_gender.Location = New System.Drawing.Point(373, 275)
+        Me.cb_gender.Name = "cb_gender"
+        Me.cb_gender.Size = New System.Drawing.Size(61, 21)
+        Me.cb_gender.TabIndex = 28
         '
-        'TextBox3
+        'cb_age
         '
-        Me.TextBox3.Location = New System.Drawing.Point(325, 209)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(234, 19)
-        Me.TextBox3.TabIndex = 27
+        Me.cb_age.FormattingEnabled = True
+        Me.cb_age.Items.AddRange(New Object() {"15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31", "32", "33"})
+        Me.cb_age.Location = New System.Drawing.Point(474, 275)
+        Me.cb_age.Name = "cb_age"
+        Me.cb_age.Size = New System.Drawing.Size(61, 21)
+        Me.cb_age.TabIndex = 29
         '
         'Register
         '
@@ -111,14 +114,14 @@ Partial Class Register
         Me.BackgroundImage = Global.SchoolEventManagement.My.Resources.Resources.LoginDashboard__2_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(586, 379)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.cb_age)
+        Me.Controls.Add(Me.cb_gender)
+        Me.Controls.Add(Me.txt_org)
+        Me.Controls.Add(Me.txt_name)
+        Me.Controls.Add(Me.txt_studID)
         Me.Controls.Add(Me.btn_exit)
         Me.Controls.Add(Me.btn_reg)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox6)
-        Me.Controls.Add(Me.TextBox5)
+        Me.Controls.Add(Me.txt_course_section)
         Me.Name = "Register"
         Me.Text = "Register"
         Me.ResumeLayout(False)
@@ -127,10 +130,10 @@ Partial Class Register
     End Sub
     Friend WithEvents btn_reg As Button
     Friend WithEvents btn_exit As Button
-    Friend WithEvents TextBox4 As TextBox
-    Friend WithEvents TextBox5 As TextBox
-    Friend WithEvents TextBox6 As TextBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_course_section As TextBox
+    Friend WithEvents txt_studID As TextBox
+    Friend WithEvents txt_name As TextBox
+    Friend WithEvents txt_org As TextBox
+    Friend WithEvents cb_gender As ComboBox
+    Friend WithEvents cb_age As ComboBox
 End Class

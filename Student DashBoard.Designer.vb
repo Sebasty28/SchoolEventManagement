@@ -90,9 +90,9 @@ Partial Class Student_DashBoard
         'lbl_AgeValue
         '
         Me.lbl_AgeValue.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_AgeValue.Location = New System.Drawing.Point(473, 274)
+        Me.lbl_AgeValue.Location = New System.Drawing.Point(484, 274)
         Me.lbl_AgeValue.Name = "lbl_AgeValue"
-        Me.lbl_AgeValue.Size = New System.Drawing.Size(64, 21)
+        Me.lbl_AgeValue.Size = New System.Drawing.Size(78, 21)
         Me.lbl_AgeValue.TabIndex = 14
         Me.lbl_AgeValue.Text = "Age"
         '

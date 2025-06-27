@@ -73,12 +73,14 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accounts.vb" />
     <Compile Include="AdminDashBoard.Designer.vb">
       <DependentUpon>AdminDashBoard.vb</DependentUpon>
     </Compile>
     <Compile Include="AdminDashBoard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="dataProcess.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
