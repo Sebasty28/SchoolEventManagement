@@ -157,5 +157,17 @@
   <ItemGroup>
     <None Include="Resources\LoginDashboard %284%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegisterDashboardUpdate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RegisterUdpate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LoginDashboard1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FeedbackForm.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

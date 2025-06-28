@@ -159,7 +159,7 @@ Partial Class Admin_DashBoard
         Me.btn_Logut.Name = "btn_Logut"
         Me.btn_Logut.Size = New System.Drawing.Size(118, 37)
         Me.btn_Logut.TabIndex = 11
-        Me.btn_Logut.Text = "Logout"
+        Me.btn_Logut.Text = "Exit"
         Me.btn_Logut.UseVisualStyleBackColor = False
         '
         'Admin_DashBoard
@@ -181,10 +181,12 @@ Partial Class Admin_DashBoard
         Me.Controls.Add(Me.txtb_dateEnd)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.tb_name)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
         Me.Margin = New System.Windows.Forms.Padding(4)
+        Me.MaximizeBox = False
         Me.Name = "Admin_DashBoard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "AdminDashBoard"
+        Me.Text = "Admin Dashboard"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

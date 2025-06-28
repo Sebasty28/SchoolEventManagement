@@ -13,6 +13,7 @@
 
         Dim name = txt_name.Text.ToUpper()
         Dim studentID = txt_studID.Text
+        Dim email = txt_Email.Text
         Dim org = txt_org.Text
         Dim Course_Section = txt_course_section.Text
         Dim age As Integer
@@ -24,7 +25,7 @@
 
 
         If Not dataProcess.ValidateStudent(studentID) Then
-            dataProcess.LoadNewAccounts(name, studentID, org, Course_Section, age, gender)
+            dataProcess.LoadNewAccounts(name, studentID, email, org, Course_Section, age, gender)
             MessageBox.Show("Account created successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
             Dim loginForm As New Login()
             loginForm.Show()
@@ -32,10 +33,12 @@
         Else
             MessageBox.Show("Failed to create account. Please try again.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
+
     End Sub
 
     Public Sub ClearFields()
         txt_name.Clear()
+        txt_Email.Clear()
         txt_org.Clear()
         txt_studID.Clear()
         cb_age.SelectedIndex = 0
@@ -47,4 +50,5 @@
         loginForm.Show()
         Me.Hide()
     End Sub
+
 End Class
