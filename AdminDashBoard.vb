@@ -13,8 +13,14 @@ Public Class Admin_DashBoard
         newEvent.DateStart = DateTime.Parse(TextBox1.Text)
         newEvent.DateEnd = DateTime.Parse(txtb_dateStart.Text)
 
-        data.AddEvent(newEvent)
+        Dim hasConflict As Boolean = data.CheckScheduleConflict(newEvent)
 
+        If hasConflict = True Then
+            MessageBox.Show("This event has a conflict with another event's schedule.", "Conflict Found", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        data.AddEvent(newEvent)
         MessageBox.Show("EVENT CREATED SUCCESSFULLY!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         RefreshEventList()

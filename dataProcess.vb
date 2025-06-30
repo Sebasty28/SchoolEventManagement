@@ -87,4 +87,19 @@ Public Class dataProcess
             End If
         Next
     End Sub
+    Public Function CheckScheduleConflict(newEvent As EventInfo) As Boolean
+        Dim i As Integer = 0
+        While i < events.Count
+            Dim existingEvent As EventInfo = events(i)
+
+
+            If newEvent.DateStart <= existingEvent.DateEnd And newEvent.DateEnd >= existingEvent.DateStart Then
+                Return True
+            End If
+
+            i = i + 1
+        End While
+
+        Return False
+    End Function
 End Class
