@@ -81,6 +81,7 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="dataProcess.vb" />
+    <Compile Include="EventInfo.vb" />
     <Compile Include="Login.Designer.vb">
       <DependentUpon>Login.vb</DependentUpon>
     </Compile>
