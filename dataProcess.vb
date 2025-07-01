@@ -1,5 +1,8 @@
-﻿Public Class dataProcess
+﻿Imports System.Reflection
+
+Public Class dataProcess
     Public Shared accounts As New List(Of Account)()
+    Public Shared events As New List(Of EventInfo)()
 
     Public Sub New()
         LoadDummyAccounts()
@@ -56,4 +59,47 @@
         Return accounts
     End Function
 
+    Public Sub AddEvent(eventInfo As EventInfo)
+        events.Add(eventInfo)
+        Debug.WriteLine("Event added: " & eventInfo.EventName)
+    End Sub
+
+    Public Sub DeleteEvent(eventName As String)
+        For i As Integer = 0 To events.Count - 1
+            If events(i).EventName = eventName Then
+                events.RemoveAt(i)
+                Debug.WriteLine("Event deleted: " & eventName)
+                Exit For
+            End If
+        Next
+    End Sub
+
+    Public Function GetEvents() As List(Of EventInfo)
+        Return events
+    End Function
+
+    Public Sub UpdateEvent(originalName As String, updatedEvent As EventInfo)
+        For i As Integer = 0 To events.Count - 1
+            If events(i).EventName = originalName Then
+                events(i) = updatedEvent
+                Debug.WriteLine("Event updated: " & updatedEvent.EventName)
+                Exit For
+            End If
+        Next
+    End Sub
+    Public Function CheckScheduleConflict(newEvent As EventInfo) As Boolean
+        Dim i As Integer = 0
+        While i < events.Count
+            Dim existingEvent As EventInfo = events(i)
+
+
+            If newEvent.DateStart <= existingEvent.DateEnd And newEvent.DateEnd >= existingEvent.DateStart Then
+                Return True
+            End If
+
+            i = i + 1
+        End While
+
+        Return False
+    End Function
 End Class
