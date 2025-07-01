@@ -72,14 +72,14 @@
         End If
 
         Dim selectedEvent As String = ListBox1.SelectedItem.ToString()
-        Dim displayText As String = userAccount.Name & ": " & feedbackText
-
-        RichTextBox1.AppendText(displayText & Environment.NewLine)
+        Dim displayText As String = $"{DateTime.Now} | {userAccount.Name} | {selectedEvent} | {feedbackText}"
 
         MessageBox.Show("Thank you for your feedback on: " & selectedEvent, "Feedback Submitted", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
+        RichTextBox1.Clear()
         panel_Feedback.Visible = False
     End Sub
+
 
 
 End Class
