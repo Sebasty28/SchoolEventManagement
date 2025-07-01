@@ -68,9 +68,10 @@ Public Class Admin_DashBoard
         Dim allEvents As List(Of EventInfo) = data.GetEvents()
 
         For Each ev As EventInfo In allEvents
-            Dim display As String = "[ " & ev.EventName & " ] at " & ev.EventVenue & " | " & ev.Organization & " | " & ev.DateStart.ToShortDateString() & " - " & ev.DateEnd.ToShortDateString()
+            Dim display As String = ev.EventName & " at " & ev.EventVenue & " | " & ev.Organization & " | " & ev.DateStart.ToShortDateString() & " - " & ev.DateEnd.ToShortDateString()
             lb_Events.Items.Add(display)
         Next
+        lb_Events.HorizontalScrollbar = True
     End Sub
     Private Sub lb_Events_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lb_Events.SelectedIndexChanged
         If lb_Events.SelectedIndex = -1 Then

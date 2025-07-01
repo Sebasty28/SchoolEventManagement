@@ -1,4 +1,5 @@
 ﻿Imports System.Reflection
+Imports System.Windows.Forms.VisualStyles.VisualStyleElement
 
 Public Class dataProcess
     Public Shared accounts As New List(Of Account)()
@@ -20,7 +21,7 @@ Public Class dataProcess
 
         accounts.Add(New Account With {
                      .Name = "ADMIN",
-                     .StudentID = "2025-002-ADMIN-0"})
+                     .StudentID = "2025-001-ADMIN-0"})
 
     End Sub
 
@@ -87,6 +88,7 @@ Public Class dataProcess
             End If
         Next
     End Sub
+
     Public Function CheckScheduleConflict(newEvent As EventInfo) As Boolean
         Dim i As Integer = 0
         While i < events.Count
@@ -102,4 +104,5 @@ Public Class dataProcess
 
         Return False
     End Function
+
 End Class

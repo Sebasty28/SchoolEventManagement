@@ -14,9 +14,15 @@
 
         Dim name = txt_name.Text.ToUpper()
         Dim studentID = txt_studID.Text.ToUpper()
-
         For Each account As Account In dataProcess.GetAccounts()
-            If account.Name = name AndAlso account.StudentID = studentID Then
+            If account.Name = name And name.Contains("ADMIN") And account.StudentID = studentID Then
+                MessageBox.Show("Welcome " & account.Name & "!", "Admin Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
+
+                Dim adminForm As New Admin_DashBoard()
+                adminForm.Show()
+                Me.Hide()
+                Return
+            ElseIf account.Name = name AndAlso account.StudentID = studentID Then
                 MessageBox.Show("Welcome " & account.Name & "!", "Login Success", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
                 Dim from_student As New Student_DashBoard(account)
@@ -25,8 +31,7 @@
                 Return
             End If
         Next
-
-        MessageBox.Show("Invalid credentials. Please try again.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        MessageBox.Show("Invalid login credentials.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error)
     End Sub
 
 

@@ -31,7 +31,6 @@ Partial Class Admin_DashBoard
         Me.btn_Create = New System.Windows.Forms.Button()
         Me.btn_Update = New System.Windows.Forms.Button()
         Me.btn_Delete = New System.Windows.Forms.Button()
-        Me.btn_feedBack = New System.Windows.Forms.Button()
         Me.btn_Logut = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -39,55 +38,62 @@ Partial Class Admin_DashBoard
         '
         Me.tb_name.BackColor = System.Drawing.Color.WhiteSmoke
         Me.tb_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.tb_name.Location = New System.Drawing.Point(328, 122)
+        Me.tb_name.Location = New System.Drawing.Point(437, 150)
+        Me.tb_name.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.tb_name.Multiline = True
         Me.tb_name.Name = "tb_name"
-        Me.tb_name.Size = New System.Drawing.Size(233, 19)
+        Me.tb_name.Size = New System.Drawing.Size(310, 23)
         Me.tb_name.TabIndex = 1
         '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.TextBox1.Location = New System.Drawing.Point(328, 270)
+        Me.TextBox1.Location = New System.Drawing.Point(437, 332)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(234, 19)
+        Me.TextBox1.Size = New System.Drawing.Size(311, 22)
         Me.TextBox1.TabIndex = 2
         '
         'txtb_dateEnd
         '
         Me.txtb_dateEnd.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_dateEnd.Location = New System.Drawing.Point(328, 224)
+        Me.txtb_dateEnd.Location = New System.Drawing.Point(437, 276)
+        Me.txtb_dateEnd.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtb_dateEnd.Multiline = True
         Me.txtb_dateEnd.Name = "txtb_dateEnd"
-        Me.txtb_dateEnd.Size = New System.Drawing.Size(234, 19)
+        Me.txtb_dateEnd.Size = New System.Drawing.Size(311, 22)
         Me.txtb_dateEnd.TabIndex = 3
         '
         'txtb_dateStart
         '
         Me.txtb_dateStart.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_dateStart.Location = New System.Drawing.Point(328, 317)
+        Me.txtb_dateStart.Location = New System.Drawing.Point(437, 390)
+        Me.txtb_dateStart.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtb_dateStart.Multiline = True
         Me.txtb_dateStart.Name = "txtb_dateStart"
-        Me.txtb_dateStart.Size = New System.Drawing.Size(234, 19)
+        Me.txtb_dateStart.Size = New System.Drawing.Size(311, 22)
         Me.txtb_dateStart.TabIndex = 4
         '
         'txtb_Venue
         '
         Me.txtb_Venue.BackColor = System.Drawing.Color.WhiteSmoke
-        Me.txtb_Venue.Location = New System.Drawing.Point(328, 175)
+        Me.txtb_Venue.Location = New System.Drawing.Point(437, 215)
+        Me.txtb_Venue.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.txtb_Venue.Multiline = True
         Me.txtb_Venue.Name = "txtb_Venue"
-        Me.txtb_Venue.Size = New System.Drawing.Size(234, 19)
+        Me.txtb_Venue.Size = New System.Drawing.Size(311, 22)
         Me.txtb_Venue.TabIndex = 5
         '
         'lb_Events
         '
         Me.lb_Events.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lb_Events.FormattingEnabled = True
-        Me.lb_Events.Location = New System.Drawing.Point(23, 68)
+        Me.lb_Events.ItemHeight = 16
+        Me.lb_Events.Location = New System.Drawing.Point(31, 84)
+        Me.lb_Events.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.lb_Events.Name = "lb_Events"
-        Me.lb_Events.Size = New System.Drawing.Size(211, 249)
+        Me.lb_Events.Size = New System.Drawing.Size(281, 306)
         Me.lb_Events.TabIndex = 6
         '
         'btn_Create
@@ -95,9 +101,10 @@ Partial Class Admin_DashBoard
         Me.btn_Create.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Create.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Create.ForeColor = System.Drawing.Color.White
-        Me.btn_Create.Location = New System.Drawing.Point(316, 352)
+        Me.btn_Create.Location = New System.Drawing.Point(421, 430)
+        Me.btn_Create.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Create.Name = "btn_Create"
-        Me.btn_Create.Size = New System.Drawing.Size(124, 25)
+        Me.btn_Create.Size = New System.Drawing.Size(165, 31)
         Me.btn_Create.TabIndex = 7
         Me.btn_Create.Text = "Create"
         Me.btn_Create.UseVisualStyleBackColor = False
@@ -107,9 +114,10 @@ Partial Class Admin_DashBoard
         Me.btn_Update.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Update.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Update.ForeColor = System.Drawing.Color.White
-        Me.btn_Update.Location = New System.Drawing.Point(453, 352)
+        Me.btn_Update.Location = New System.Drawing.Point(604, 430)
+        Me.btn_Update.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Update.Name = "btn_Update"
-        Me.btn_Update.Size = New System.Drawing.Size(124, 25)
+        Me.btn_Update.Size = New System.Drawing.Size(165, 31)
         Me.btn_Update.TabIndex = 8
         Me.btn_Update.Text = "Update"
         Me.btn_Update.UseVisualStyleBackColor = False
@@ -119,47 +127,36 @@ Partial Class Admin_DashBoard
         Me.btn_Delete.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
         Me.btn_Delete.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Delete.ForeColor = System.Drawing.Color.White
-        Me.btn_Delete.Location = New System.Drawing.Point(316, 375)
+        Me.btn_Delete.Location = New System.Drawing.Point(517, 464)
+        Me.btn_Delete.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Delete.Name = "btn_Delete"
-        Me.btn_Delete.Size = New System.Drawing.Size(124, 25)
+        Me.btn_Delete.Size = New System.Drawing.Size(165, 31)
         Me.btn_Delete.TabIndex = 9
         Me.btn_Delete.Text = "Delete"
         Me.btn_Delete.UseVisualStyleBackColor = False
-        '
-        'btn_feedBack
-        '
-        Me.btn_feedBack.BackColor = System.Drawing.Color.FromArgb(CType(CType(52, Byte), Integer), CType(CType(152, Byte), Integer), CType(CType(219, Byte), Integer))
-        Me.btn_feedBack.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_feedBack.ForeColor = System.Drawing.Color.White
-        Me.btn_feedBack.Location = New System.Drawing.Point(453, 375)
-        Me.btn_feedBack.Name = "btn_feedBack"
-        Me.btn_feedBack.Size = New System.Drawing.Size(124, 25)
-        Me.btn_feedBack.TabIndex = 10
-        Me.btn_feedBack.Text = "Feedback"
-        Me.btn_feedBack.UseVisualStyleBackColor = False
         '
         'btn_Logut
         '
         Me.btn_Logut.BackColor = System.Drawing.Color.DarkGray
         Me.btn_Logut.Font = New System.Drawing.Font("Courier New", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_Logut.ForeColor = System.Drawing.Color.White
-        Me.btn_Logut.Location = New System.Drawing.Point(10, 372)
+        Me.btn_Logut.Location = New System.Drawing.Point(13, 458)
+        Me.btn_Logut.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.btn_Logut.Name = "btn_Logut"
-        Me.btn_Logut.Size = New System.Drawing.Size(88, 30)
+        Me.btn_Logut.Size = New System.Drawing.Size(117, 37)
         Me.btn_Logut.TabIndex = 11
         Me.btn_Logut.Text = "Exit"
         Me.btn_Logut.UseVisualStyleBackColor = False
         '
         'Admin_DashBoard
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(248, Byte), Integer))
         Me.BackgroundImage = Global.SchoolEventManagement.My.Resources.Resources.LoginDashboard__4_
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(598, 410)
+        Me.ClientSize = New System.Drawing.Size(797, 505)
         Me.Controls.Add(Me.btn_Logut)
-        Me.Controls.Add(Me.btn_feedBack)
         Me.Controls.Add(Me.btn_Delete)
         Me.Controls.Add(Me.btn_Update)
         Me.Controls.Add(Me.btn_Create)
@@ -170,6 +167,7 @@ Partial Class Admin_DashBoard
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.tb_name)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.MaximizeBox = False
         Me.Name = "Admin_DashBoard"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
@@ -188,6 +186,5 @@ Partial Class Admin_DashBoard
     Friend WithEvents btn_Create As Button
     Friend WithEvents btn_Update As Button
     Friend WithEvents btn_Delete As Button
-    Friend WithEvents btn_feedBack As Button
     Friend WithEvents btn_Logut As Button
 End Class
